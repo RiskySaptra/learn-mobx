@@ -1,12 +1,19 @@
 import React from "react";
-import "./App.css";
 
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import Todos from "./components/Todos";
 
 const App = () => {
   return (
-    <div className="App-header">
-      <Counter />
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        width: "100%",
+      }}
+    >
+      {/* <Counter /> */}
+      <Todos />
     </div>
   );
 };

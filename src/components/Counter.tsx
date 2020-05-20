@@ -11,10 +11,19 @@ const Counter = observer(function Counter() {
 
   return (
     <>
-      <div style={{ textAlign: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+
+          width: "100%",
+          background: "grey",
+        }}
+      >
         <h3>Counter</h3>
         <h4>{count}</h4>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div>
           <button onClick={() => counterStore.increment()}>Increment</button>
           <button onClick={() => counterStore.decrement()}>Decrement</button>
         </div>
